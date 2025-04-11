@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csrc-scraper"
+version = "0.1.0"
+authors = [
+  {name = "Patrick Ruppert", email = "patrick.j.ruppert@gmail.com"},
+]
+readme = "README.md"
+dependencies = ["requests"]
+
+[project.urls]
+Repository = "https://github.com/ratPoopert/csrc-scraper"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tools.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["csrc_scaper"]
