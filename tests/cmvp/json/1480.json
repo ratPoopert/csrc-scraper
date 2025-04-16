@@ -1,1 +1,99 @@
-{"certificate_number": "1480"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "1480",
+  "Details": {
+    "Module Name": "Steelhead 1050 and Steelhead 2050 Appliances",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode and with the tamper evident seals and security panels installed as indicated in the Security Policy",
+    "Security Level Exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip standalone",
+    "Description": "The Steelhead family of appliances provides application acceleration and accelerated data transfer over a wide area network (WAN), overcoming bandwidth and geographical limitations to improve productivity and enable global collaboration.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #1044",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=1044"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #586",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=586"
+        ]
+      ],
+      [
+        "RNG",
+        "Cert. #595",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=595"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #498",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=498"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #994",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=994"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #792",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=792"
+        ]
+      ]
+    ],
+    "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DSA (FIPS 186-3; non-compliant) ; MD5; DES; RC2; RC4; IDEA; CAST; Blowfish; HMAC-Tiger; EC Diffie-Hellman (SP 800-56A; non-compliant)",
+    "Hardware Versions": "1050 and 2050",
+    "Firmware Versions": "4.1.10"
+  },
+  "Vendor": {
+    "Name": "Riverbed Technology, Inc.",
+    "Website": "http://www.riverbed.com/",
+    "Address": "199 Fremont Street\nSan Francisco, CA 94105\nUSA",
+    "Contacts": [
+      {
+        "Name": "Amol Kabe",
+        "Email": "akabe@riverbed.com",
+        "Phone": "415-344-4447"
+      },
+      {
+        "Name": "Gordon Chaffee",
+        "Email": "gordon@riverbed.com",
+        "Phone": "415-247-7353"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1480.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0002.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "1/11/2011",
+      "Type": "Initial",
+      "Lab": "DOMUS"
+    }
+  ]
+}

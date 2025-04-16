@@ -1,1 +1,139 @@
-{"certificate_number": "4456"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "4456",
+  "Details": {
+    "Module Name": "Symantec Content Analysis Virtual Appliance",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "9/21/2026",
+    "Overall Level": 1,
+    "Caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy.",
+    "Security Level Exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The Symantec Content Analysis (CAS) is a critical component of effective protection against advanced targeted attacks achieved via multi-layer file inspection and sandboxing. Together with ProxySG or Symantec Messaging Gateway (SMG), it offers the most complete advanced threat protection in the marketplace for blocking known threats and analyzing zero-day and other advanced threats.",
+    "Tested Configuration(s)": [
+      "KVM on Centos 7 running on a Symantec ISG SSP-S410-10 with an Intel® Xeon® Silver 4210 (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #A1763 and #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1763",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "CVL",
+        "Cert. #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "DRBG",
+        "Certs. #A1763 and #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1763",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "ENT",
+        "NP"
+      ],
+      [
+        "HMAC",
+        "Certs. #A1762 and #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1762",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "KAS",
+        "KAS-SSC Cert. #A1764, CVL Cert. #A1764"
+      ],
+      [
+        "KAS-SSC",
+        "Cert. #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "KTS",
+        "AES Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength"
+      ],
+      [
+        "KTS",
+        "AES Cert. #A1764, HMAC Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength"
+      ],
+      [
+        "KTS-RSA",
+        "Cert. #A1764; key establishment methodology provides 112 bits of encryption strength"
+      ],
+      [
+        "RSA",
+        "Certs. #A1762 and #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1762",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #A1762, #A1763 and #A1764",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1762",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1763",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=1764"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "N/A",
+    "Software Versions": "3.1.3.0"
+  },
+  "Vendor": {
+    "Name": "Symantec, A Division of Broadcom",
+    "Website": "http://www.broadcom.com/",
+    "Address": "1320 Ridder Park Dr.\nSan Jose, CA 95131\nUSA",
+    "Contacts": [
+      {
+        "Name": "Ian Hall",
+        "Email": "symc-fed-certs.pdl@broadcom.com"
+      },
+      {
+        "Name": "Dereck Oshin",
+        "Email": "symc-fed-certs.pdl@broadcom.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4456.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202023_030423_0646.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "3/22/2023",
+      "Type": "Initial",
+      "Lab": "Lightship Security, Inc."
+    }
+  ]
+}

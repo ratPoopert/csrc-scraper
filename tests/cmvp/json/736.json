@@ -1,1 +1,112 @@
-{"certificate_number": "736"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "736",
+  "Details": {
+    "Module Name": "JUNOS-FIPS-L2 Cryptographic Module",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+    "Overall Level": 2,
+    "Caveat": "None",
+    "Security Level Exceptions": [
+      "Design Assurance: Level 3"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip standalone",
+    "Description": "The JUNOS-FIPS-L2 Cryptographic Module is a multi-chip standalone cryptographic module (for Juniper Networks T-Series and M-Series routers) that executes JUNOS-FIPS firmware. JUNOS-FIPS is a release of the JUNOS operating system, the first routing operating system designed specifically for the Internet. JUNOS is currently deployed in the largest and fastest-growing networks worldwide. A full suite of industrial-strength routing protocols, flexible policy language, and leading MPLS implementation efficiently scale to large numbers of network interfaces and routes.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #259 and #260",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=259",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=260"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #137",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=137"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #70, #71, #72, #73 and #79",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=70",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=71",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=72",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=73",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=79"
+        ]
+      ],
+      [
+        "RNG",
+        "Cert. #93",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=93"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #69",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=69"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #336, #337, #338, #339 and #340",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=336",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=337",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=338",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=339",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=340"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #341, #342, #343 and #344",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=341",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=342",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=343",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=344"
+        ]
+      ]
+    ],
+    "Other Algorithms": "DES (Certs. #316, #317, #318 and #319); MD5; Diffie-Hellmann (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant)"
+  },
+  "Vendor": {
+    "Name": "Juniper Networks, Inc.",
+    "Website": "http://www.juniper.net/",
+    "Address": "1194 N. Mathilda Ave.\nSunnyvale, CA 94089\nUSA",
+    "Contacts": [
+      {
+        "Name": "Simon Gerraty",
+        "Email": "sjg@juniper.net",
+        "Phone": "408-745-2348",
+        "Fax": "408-745-8905"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp736.pdf"
+    ],
+    [
+      "Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt736.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "2/6/2007",
+      "Type": "Initial",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    }
+  ]
+}

@@ -1,1 +1,140 @@
-{"certificate_number": "1708"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "1708",
+  "Details": {
+    "Module Name": "nShield F3 4000 [1], nShield F3 2000 [2], nShield F3 2000 for NetHSM [3], nShield F3 500 [4] and nShield F3 500 for NetHSM [5]",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+    "Overall Level": 3,
+    "Caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
+    "Security Level Exceptions": [
+      "Physical Security: Level 3 + EFP"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip embedded",
+    "Description": "The nShield modules: nCipher 4000, nShield 2000, nShield 2000 for NetHSM, nShield 500, and nShield 500 for NetHSM family of secure e-commerce HSM's are multi-tasking hardware modules that is optimized for performing modular arithmetic on very large integers. The nShield modules are FIPS 140-2 level 3 embedded devices. The units are identical in operation and only vary in the processing speed.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #1579",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=1579"
+        ]
+      ],
+      [
+        "CVL",
+        "Cert. #1",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #72",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=72"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #487",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=487"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #192",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=192"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #925",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=925"
+        ]
+      ],
+      [
+        "RSA",
+        "Certs. #770 and #1092",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=770",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1092"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #1398",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=1398"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #132 and #1035",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=132",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1035"
+        ]
+      ],
+      [
+        "Triple-DES MAC",
+        "Triple-DES Cert. #1035, vendor affirmed"
+      ]
+    ],
+    "Other Algorithms": "ARC4; Aria; Camellia; CAST-6; DES; MD5; SEED; HMAC-MD5; HMAC-Tiger; HMAC-RIPEMD160; RIPEMD-160; Tiger; El-Gamal; KCDSA; HAS-160; AES (Cert. #1579, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1035, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)",
+    "Hardware Versions": "nC4033P-4K0 [1], nC4033P-2K0 [2], nC4033P-2K0N [3], nC4033P-500 [4] and nC4033P-500N [5], Build Standard N",
+    "Firmware Versions": "2.50.16-3, 2.51.10-3, 2.50.35-3 and 2.55.1-3"
+  },
+  "Vendor": {
+    "Name": "nCipher Security Limited",
+    "Website": "http://www.ncipher.com/",
+    "Address": "One Station Square\nSuite 710\nCambridge, FL CB1 2GA\nUnited Kingdom",
+    "Contacts": [
+      {
+        "Name": "sales@ncipher.com",
+        "Email": "sales@ncipher.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1708.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0016.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "4/27/2012",
+      "Type": "Initial",
+      "Lab": "DXC Technology"
+    },
+    {
+      "Date": "3/8/2013",
+      "Type": "Update",
+      "Lab": "DXC Technology"
+    },
+    {
+      "Date": "8/16/2013",
+      "Type": "Update",
+      "Lab": "DXC Technology"
+    },
+    {
+      "Date": "11/16/2015",
+      "Type": "Update",
+      "Lab": "DXC Technology"
+    },
+    {
+      "Date": "1/29/2020",
+      "Type": "Update",
+      "Lab": "Lightship Security, Inc."
+    }
+  ]
+}

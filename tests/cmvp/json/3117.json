@@ -1,1 +1,123 @@
-{"certificate_number": "3117"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3117",
+  "Details": {
+    "Module Name": "Brocade® X6-8 and X6-4 Directors",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "SP 800-56Arev3 transition",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode and when tamper evident labels are installed as indicated in the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+    "Security Level Exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The Brocade® X6-8 and X6-4 directors provide a reliable, scalable Fibre Channel switching infrastructure with Gen 6 32 Gbps technology and capabilities that support demanding, enterprise-class private cloud storage and highly virtualized environments.",
+    "Tested Configuration(s)": [
+      "N/A"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #4116, #4145 and #4243",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4116",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4145",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4243"
+        ]
+      ],
+      [
+        "CVL",
+        "Certs. #923, #924, #990, #991 and #992",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=923",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=924",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=990",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=991",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=992"
+        ]
+      ],
+      [
+        "DRBG",
+        "Certs. #1239 and #1322",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1239",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1322"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #1133",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=1133"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Certs. #934 and #983",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=934",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=983"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #2688 and #2781",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2688",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2781"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #2289",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2289"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #3386 and #3480",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3386",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3480"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "Diffie-Hellman (CVL Certs. #990 and #991, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #990, #991 and #992, key agreement; key establishment methodology provides 128 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #923 and #924, key agreement; key establishment methodology provides 192 bits of encryption strength); HMAC-MD5; MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+    "Hardware Versions": "{BR-X64-001 (80-1009190-01) with FRUs (80-1009332-01, 80-1009341-01, 80-1009225-01, 80-1009227-01, 80-1009326-01, 80-1009441-01, 80-1009349-01, 80-1009348-01, 80-1009348-01), BR-X68-001 (80-1009230-01) with FRUs (80-1009332-01, 80-1009342-01, 80-1009225-01, 80-1009227-01, 80-1009326-01, 80-1009441-01, 80-1009349-01, 80-1009348-01, 80-1009348-01)} with FIPS Kit Brocade XBR-000195 (P/N: 80-1002006-02)",
+    "Firmware Versions": "Fabric OS v8.1.0 (P/N 63-1001736-01)",
+    "Product URL": "http://www.brocade.com/products/all/index.page"
+  },
+  "Vendor": {
+    "Name": "Brocade Communications Systems, Inc.",
+    "Website": "http://www.brocade.com/",
+    "Address": "130 Holger Way\nSan Jose, CA 95134\nUSA",
+    "Contacts": [
+      {
+        "Name": "Hamid Sobouti",
+        "Email": "hsobouti@brocade.com",
+        "Phone": "408-333-4150",
+        "Fax": "408-333-8101"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3117.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedCertFeb2018.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "2/6/2018",
+      "Type": "Initial",
+      "Lab": "ÆGISOLVE"
+    }
+  ]
+}

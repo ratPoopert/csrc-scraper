@@ -1,1 +1,138 @@
-{"certificate_number": "3187"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3187",
+  "Details": {
+    "Module Name": "NPCT7xx TPM 2.0",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "9/21/2026",
+    "Overall Level": 2,
+    "Caveat": "When installed, initialized, and configured as specified in the Security Policy Section 9.2 and operated in FIPS mode",
+    "Security Level Exceptions": [
+      "EMI/EMC: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Single Chip",
+    "Description": "Nuvoton NPCT7xx TPM 2.0 is a hardware cryptographic module that implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography; as well as key generation and random number generation.",
+    "Tested Configuration(s)": [
+      "N/A"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #4746",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4746"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "CVL",
+        "Cert. #1845",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1845"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #1628",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1628"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #1183",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=1183"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #3161",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=3161"
+        ]
+      ],
+      [
+        "KAS",
+        "SP800-56A rev 3, vendor affirmed"
+      ],
+      [
+        "KAS",
+        "SP 800-56B, vendor affirmed"
+      ],
+      [
+        "KBKDF",
+        "Cert. #150",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KDF&number=150"
+        ]
+      ],
+      [
+        "KTS",
+        "AES Cert. #4746 and HMAC Cert. #3161; key establishment methodology provides 128 or 256 bits of encryption strength"
+      ],
+      [
+        "RSA",
+        "Cert. #2591",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2591"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #3890",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3890"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "NDRNG",
+    "Hardware Versions": "LAG019 in TSSOP28 Package, LAG019 in QFN32 Package, and LAG019 in UQFN16 Package",
+    "Firmware Versions": "7.2.0.1 and 7.2.0.2"
+  },
+  "Vendor": {
+    "Name": "Nuvoton Technology Corporation",
+    "Website": "http://www.nuvoton.com/",
+    "Address": "4, Creation Road III\nHsinchu Science Park\nTaiwan",
+    "Contacts": [
+      {
+        "Name": "Yossi Talmi",
+        "Email": "Yossi.Talmi@nuvoton.com",
+        "Phone": "+972-9-9702364"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3187.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May2018consolidated.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "5/31/2018",
+      "Type": "Initial",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "4/5/2019",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "10/1/2021",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    }
+  ]
+}

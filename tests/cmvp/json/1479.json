@@ -1,1 +1,111 @@
-{"certificate_number": "1479"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "1479",
+  "Details": {
+    "Module Name": "Imation S200/D200",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+    "Overall Level": 3,
+    "Caveat": "Files distributed with the module mounted within the internal CD Drive are excluded from validation",
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip standalone",
+    "Description": "The IronKey Secure Flash Drives include a high-speed hardware-based 256 Bit AES cryptography engine for encrypting and decrypting NAND flash and RAM buffers via USB. It also includes RSA, HMAC, SHA-256, SHA-1, and RNG algorithms.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #1034",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=1034"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #579",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=579"
+        ]
+      ],
+      [
+        "RNG",
+        "Certs. #587 and #702",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=587",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=702"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #605",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=605"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #987 and #1154",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=987",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=1154"
+        ]
+      ]
+    ],
+    "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+    "Hardware Versions": "D2-S200-S01 (Rev 1), D2-S200-S02 (Rev 1), D2-S200-S04 (Rev 1), D2-S200-S08 (Rev 1), D2-S200-S16 (Rev 1), D2-D200-S01 (Rev 1), D2-D200-S02 (Rev 1), D2-D200-S04 (Rev 1), D2-D200-S08 (Rev 1), D2-D200-S16 (Rev 1) or D2-D200-S32 (Rev 1)",
+    "Firmware Versions": "2.0.10, 2.0.11, 2.0.12, 2.0.13, 2.1.0, 2.1.1 or 2.1.2"
+  },
+  "Vendor": {
+    "Name": "Imation Corp.",
+    "Website": "http://www.imation.com/mobilesecurity",
+    "Address": "Discovery Bldg. 1A-041\nOakdale, MN 55128\nUSA",
+    "Contacts": [
+      {
+        "Name": "Larry Hamid",
+        "Email": "crypto-ims@imation.com",
+        "Phone": "408-737-4308"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1479.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0002.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "1/7/2011",
+      "Type": "Initial",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    },
+    {
+      "Date": "8/9/2011",
+      "Type": "Update",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    },
+    {
+      "Date": "9/19/2011",
+      "Type": "Update",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    },
+    {
+      "Date": "10/4/2011",
+      "Type": "Update",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    },
+    {
+      "Date": "10/26/2011",
+      "Type": "Update",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    },
+    {
+      "Date": "4/24/2012",
+      "Type": "Update",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    }
+  ]
+}

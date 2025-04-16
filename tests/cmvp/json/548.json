@@ -1,1 +1,107 @@
-{"certificate_number": "548"}
+{
+    "$schema": "./cmvp-certificate.schema.json",
+    "Certificate Number": "548",
+    "Details": {
+        "Module Name": "ID-One Cosmo 64 v5",
+        "Standard": "FIPS 140-2",
+        "Status": "Historical",
+        "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+        "Overall Level": 3,
+        "Caveat": "None",
+        "Module Type": "Hardware",
+        "Embodiment": "Single-chip",
+        "Description": "The ID-One Cosmo 64 v5 is a JavaCard cryptographic module with dual interface (ISO 7816 & ISO 14443) specifically designed for identity and government market needs. It offers a full 64K Byte of EEPROM space available for customer discretionary use, together with on card cryptographic services such as TDES, AES, Elliptic Curve and 2048-bit RSA algorithms with on-card key generation. It is compliant to Java Card v2.2 and Open Platform v2.1.1A. To protect against skimming, a built-in firewall allows application developers to disable contactless access for sensitive operations. Additional features include On- Card fingerprint matching and Logical Channels. The ID-One Cosmo 64 v5 is available in contact only, dual interface, or contactless only formats.",
+        "Approved Algorithms": [
+            [
+                "RNG",
+                "Cert. #94",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=94"
+                ]
+            ],
+            [
+                "RSA",
+                "Cert. #43",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=43"
+                ]
+            ],
+            [
+                "SHS",
+                "Cert. #209",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=209"
+                ]
+            ],
+            [
+                "Triple-DES",
+                "Cert. #232",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=232"
+                ]
+            ],
+            [
+                "Triple-DES MAC",
+                "Triple-DES Cert. #232, vendor affirmed"
+            ]
+        ],
+        "Other Algorithms": "DES (Cert. #246); DES MAC (Cert. #246, vendor affirmed)",
+        "Hardware Versions": "P/N 77",
+        "Firmware Versions": "E303-063683 and E303-063684"
+    },
+    "Vendor": {
+        "Name": "Oberthur Card Systems",
+        "Website": "http://www.oberthurusa.com/",
+        "Address": "4250 Pleasant Valley Road\nChantilly, VA 20151\nUSA",
+        "Contacts": [
+            {
+                "Name": "Christophe Goyet",
+                "Email": "Christophe.Goyet@oberthurusa.com",
+                "Phone": "703-263-0100",
+                "Fax": "703-263-7134"
+            }
+        ]
+    },
+    "Related Files": [
+        [
+            "Security Policy",
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp548.pdf"
+        ],
+        [
+            "Certificate",
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt548.pdf"
+        ]
+    ],
+    "Validation History": [
+        {
+            "Date": "6/9/2005",
+            "Type": "Initial",
+            "Lab": "UL VERIFICATION SERVICES INC"
+        },
+        {
+            "Date": "9/23/2005",
+            "Type": "Update",
+            "Lab": ""
+        },
+        {
+            "Date": "5/16/2006",
+            "Type": "Update",
+            "Lab": ""
+        },
+        {
+            "Date": "8/16/2006",
+            "Type": "Update",
+            "Lab": ""
+        },
+        {
+            "Date": "4/30/2007",
+            "Type": "Update",
+            "Lab": ""
+        },
+        {
+            "Date": "10/15/2007",
+            "Type": "Update",
+            "Lab": ""
+        }
+    ]
+}

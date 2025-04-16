@@ -1,1 +1,191 @@
-{"certificate_number": "3980"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3980",
+  "Details": {
+    "Module Name": "Ubuntu 18.04 OpenSSL Cryptographic Module",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "7/11/2026",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode. The module generates keys whose strengths are modified by available entropy",
+    "Security Level Exceptions": [
+      "Physical Security: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
+    "Tested Configuration(s)": [
+      "Ubuntu 18.04 LTS 64-bit running on Supermicro SYS-5018R-WR with Intel Xeon CPU E5-2620v3 with PAA",
+      "Ubuntu 18.04 LTS 64-bit running on Supermicro SYS-5018R-WR with Intel Xeon CPU E5-2620v3 without PAA (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #A817, #A818, #A819, #A825, #A826, #A827, #A828, #A829, #A830, #A831, #A832 and #A833",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=817",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=818",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=819",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=825",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=826",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=827",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=828",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=829",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=830",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=831",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=832",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=833"
+        ]
+      ],
+      [
+        "CVL",
+        "Certs. #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "DRBG",
+        "Certs. #A817, #A818 and #A819",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=817",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=818",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=819"
+        ]
+      ],
+      [
+        "DSA",
+        "Certs. #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Certs. #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #A814, #A815, #A816, #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=814",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=815",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=816",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "KAS",
+        "KAS-SSC Certs. #A821, #A822, #A823, #A824 and #A834, CVL Certs. #A821, #A822, #A823 and #A824"
+      ],
+      [
+        "KTS",
+        "AES Certs. #A817, #A818, #A819, #A825, #A826, #A827, #A828, #A829, #A830, #A831, #A832 and #A833; key establishment methodology provides between 128 and 256 bits of encryption strength"
+      ],
+      [
+        "KTS",
+        "AES Certs. #A817, #A818 and #A819 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides between 128 or 256 bits of encryption strength"
+      ],
+      [
+        "KTS",
+        "Triple-DES Cert. #A820 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides 112 bits of encryption strength"
+      ],
+      [
+        "RSA",
+        "Certs. #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "SHA-3",
+        "Certs. #A814, #A815 and #A816",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=814",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=815",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=816"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #A821, #A822, #A823 and #A824",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=821",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=822",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=823",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=824"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #A820",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=820"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+    "Software Versions": "2.1"
+  },
+  "Vendor": {
+    "Name": "Canonical Ltd.",
+    "Website": "http://www.canonical.com/",
+    "Address": "5th floor, Blue Fin Building\n110 Southwark Street\nLondon SE1 0SU\nUnited Kingdom",
+    "Contacts": [
+      {
+        "Name": "Canonical Certification Team",
+        "Email": "security-certifications@lists.canonical.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3980.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202021_020821_0740_signed.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "7/12/2021",
+      "Type": "Initial",
+      "Lab": "ATSEC INFORMATION SECURITY CORP"
+    },
+    {
+      "Date": "9/21/2021",
+      "Type": "Update",
+      "Lab": "ATSEC INFORMATION SECURITY CORP"
+    },
+    {
+      "Date": "10/18/2021",
+      "Type": "Update",
+      "Lab": "ATSEC INFORMATION SECURITY CORP"
+    },
+    {
+      "Date": "11/23/2022",
+      "Type": "Update",
+      "Lab": "ATSEC INFORMATION SECURITY CORP"
+    }
+  ]
+}

@@ -1,1 +1,106 @@
-{"certificate_number": "877"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "877",
+  "Details": {
+    "Module Name": "7206VXR NPE-G1, 7206VXR NPE-G2 and 7301 with VAM2+ and 7206VXR NPE-G2 with VSA",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode",
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip standalone",
+    "Description": "Cisco Modular Access Routers are routers that provide data protection on a network providing packet encryption. The module performs all of the functions typical of a router. In addition to the normal routing functions, the module also provides packet encryption. The module is capable of encrypting traffic between one or more modules: providing a secure connection at the packet level.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #91 and #173",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=91",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=173"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #39 and #203",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=39",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=203"
+        ]
+      ],
+      [
+        "RNG",
+        "Certs. #83, #266 and #267",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=83",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=266",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=267"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #258, #500, #556 and #557",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=258",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=500",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=556",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=557"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #204 and #275",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=204",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=275"
+        ]
+      ]
+    ],
+    "Other Algorithms": "MD4; MD5; HMAC MD5; Diffie-Hellman (key agreement; key establishment methodology provides 80 or 96 bits of encryption strength; non-compliant); DES; RSA (non-compliant); AES (non-compliant); Triple-DES (non-compliant); HMAC (non-compliant)",
+    "Hardware Versions": "7206VXR Version: 2.9, NPE-G1 Version: 2.1, NPE-G2 Version: 1.0, VAM2+ Version: 1.0, VSA Version: 1.0, C7200-JC-PA Version: 1.0, 7301 Version: 2.0",
+    "Firmware Versions": "12.4(11)T1"
+  },
+  "Vendor": {
+    "Name": "Cisco Systems, Inc.",
+    "Website": "http://www.cisco.com/",
+    "Address": "170 West Tasman Drive\nSan Jose, CA 95134\nUSA",
+    "Contacts": [
+      {
+        "Name": "Global Certification Team",
+        "Email": "certteam@cisco.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp877.pdf"
+    ],
+    [
+      "Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt877.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "11/30/2007",
+      "Type": "Initial",
+      "Lab": "SAIC-VA"
+    },
+    {
+      "Date": "12/18/2007",
+      "Type": "Update",
+      "Lab": ""
+    },
+    {
+      "Date": "5/28/2010",
+      "Type": "Update",
+      "Lab": ""
+    },
+    {
+      "Date": "2/23/2012",
+      "Type": "Update",
+      "Lab": ""
+    }
+  ]
+}

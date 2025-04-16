@@ -1,1 +1,120 @@
-{"certificate_number": "2394"}
+{
+    "$schema": "./cmvp-certificate.schema.json",
+    "Certificate Number": "2394",
+    "Details": {
+        "Module Name": "HP TippingPoint Crypto Core NSS",
+        "Standard": "FIPS 140-2",
+        "Status": "Historical",
+        "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+        "Overall Level": 1,
+        "Caveat": "When operated in FIPS mode and when obtained, installed, and initialized as specified in Section 5 of the provided Security Policy. For Red Hat Linux 6.2, Section 5 also specifies the precise RPM file containing this module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the RPM file if the RPM tool indicates an integrity error. For CentOS 5.6 the module is compiled from source available from Mozilla. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy",
+        "Security Level Exceptions": [
+            "Physical Security: N/A",
+            "Design Assurance: Level 2"
+        ],
+        "Module Type": "Software",
+        "Embodiment": "Multi-chip standalone",
+        "Description": "The HP TippingPoint Crypto Core NSS is a software library which provides FIPS 140-2 approved cryptographic algorithms and services for HP TippingPoint security products.",
+        "Tested Configuration(s)": [
+            "CentOS 5.6 64-bit running on an Intel Xeon E5-2620v3",
+            "CentOS 5.6 64-bit running on an Intel Xeon E5-2690v3 (single-user mode)",
+            "Red Hat Enterprise Linux v6.2 32-bit running on an Intel Core i7 system",
+            "Red Hat Enterprise Linux v6.2 64-bit running on an Intel Core i7 system with PAA",
+            "Red Hat Enterprise Linux v6.2 64-bit running on an Intel Core i7 system without PAA"
+        ],
+        "Approved Algorithms": [
+            [
+                "AES",
+                "Certs. #1908 and #3285",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=1908",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=3285"
+                ]
+            ],
+            [
+                "DRBG",
+                "Certs. #165 and #743",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=165",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=743"
+                ]
+            ],
+            [
+                "DSA",
+                "Certs. #602 and #942",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=602",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=942"
+                ]
+            ],
+            [
+                "HMAC",
+                "Certs. #1145 and #2082",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1145",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2082"
+                ]
+            ],
+            [
+                "RSA",
+                "Certs. #979 and #1682",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=979",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1682"
+                ]
+            ],
+            [
+                "SHS",
+                "Certs. #1675 and #2723",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=1675",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2723"
+                ]
+            ],
+            [
+                "Triple-DES",
+                "Certs. #1240 and #1872",
+                [
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1240",
+                    "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1872"
+                ]
+            ]
+        ],
+        "Other Algorithms": "AES (Certs. #1908 and #3285, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Camellia; DES; Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); HKDF; J-PAKE; MD2; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SEED; Triple-DES (Certs. #1240 and #1872, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)",
+        "Software Versions": "3.12.9.1"
+    },
+    "Vendor": {
+        "Name": "Hewlett-Packard TippingPoint",
+        "Website": "http://www.tippingpoint.com/",
+        "Address": "14231 Tandem Blvd.\nAustin, TX 78728\nUSA",
+        "Contacts": [
+            {
+                "Name": "Freddy Mercado",
+                "Email": "f.m@hp.com",
+                "Phone": "512-432-2947"
+            },
+            {
+                "Name": "Russ Meyers",
+                "Email": "russell.meyers@hp.com",
+                "Phone": "512-432-2948"
+            }
+        ]
+    },
+    "Related Files": [
+        [
+            "Security Policy",
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2394.pdf"
+        ],
+        [
+            "Consolidated Certificate",
+            "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0054.pdf"
+        ]
+    ],
+    "Validation History": [
+        {
+            "Date": "6/15/2015",
+            "Type": "Initial",
+            "Lab": "LEIDOS CSTL"
+        }
+    ]
+}

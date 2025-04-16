@@ -1,1 +1,166 @@
-{"certificate_number": "2038"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "2038",
+  "Details": {
+    "Module Name": "CryptoComply for Server",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "3/8/2026",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode. The module makes no assurance of the minimum strength of random strings and generated keys.",
+    "Module Type": "Software",
+    "Embodiment": "Multi-chip standalone",
+    "Description": "SafeLogic's CryptoComply for Server is designed to provide FIPS 140-2 validated cryptographic functionality and is available for licensing.",
+    "Tested Configuration(s)": [
+      "CentOS 7 running on a Dell PowerEdge R830 with an Intel Xeon E5-4667v4 with PAA",
+      "CentOS 7 running on a Dell PowerEdge R830 with an Intel Xeon E5-4667v4 without PAA",
+      "macOS 13 (Ventura) running on a Mac Mini M2 with an Apple M2",
+      "Windows Server 2022 running on a Dell PowerEdge R830 with an Intel Xeon E5-4667v4 with PAA",
+      "Windows Server 2022 running on a Dell PowerEdge R830 with an Intel Xeon E5-4667v4 without PAA (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "DRBG",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #A4873",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=4873"
+        ]
+      ]
+    ],
+    "Other Algorithms": "N/A",
+    "Software Versions": "2.1.2",
+    "Product URL": "https://www.safelogic.com/cryptocomply"
+  },
+  "Vendor": {
+    "Name": "SafeLogic Inc.",
+    "Website": "http://www.safelogic.com/",
+    "Address": "530 Lytton Ave\nSuite 200\nPalo Alto, CA 94301\nUSA",
+    "Contacts": [
+      {
+        "Name": "SafeLogic Inside Sales",
+        "Email": "sales@safelogic.com",
+        "Phone": "844-436-2797"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2038.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "11/15/2013",
+      "Type": "Initial",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "1/23/2014",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "2/20/2014",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "1/25/2016",
+      "Type": "Update",
+      "Lab": ""
+    },
+    {
+      "Date": "2/5/2016",
+      "Type": "Update",
+      "Lab": "ACUMEN SECURITY, LLC"
+    },
+    {
+      "Date": "3/29/2018",
+      "Type": "Update",
+      "Lab": "ACUMEN SECURITY, LLC"
+    },
+    {
+      "Date": "7/24/2020",
+      "Type": "Update",
+      "Lab": "ÆGISOLVE"
+    },
+    {
+      "Date": "3/9/2021",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "5/25/2021",
+      "Type": "Update",
+      "Lab": "ÆGISOLVE"
+    },
+    {
+      "Date": "1/17/2023",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "4/16/2024",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    }
+  ]
+}

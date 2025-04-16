@@ -1,1 +1,170 @@
-{"certificate_number": "3189"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3189",
+  "Details": {
+    "Module Name": "REDCOM Encryption 140-2",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "SP 800-56Arev3 transition",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+    "Security Level Exceptions": [
+      "Physical Security: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "REDCOM Encryption 140-2 is a fully FIPS 140-2 validated cryptographic engine for Java and Android based environments. The module delivers core cryptographic functions to these platforms and features robust algorithm support, including Suite B algorithms. REDCOM Encryption 140-2 offloads functions for secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation. **Oracle and Java are registered trademarks of Oracle and/or its affiliates. **Android is a trademark of Google Inc",
+    "Tested Configuration(s)": [
+      "CentOS 6 and OpenJDK 1.7 running on HP ProLiant DL360 G7 Server using an Intel Xeon X5670 (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #4702",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4702"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "CVL",
+        "Certs. #1342, #1343, #1344 and #1345",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1342",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1343",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1344",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1345"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #1600",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1600"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #1244",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=1244"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #1160",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=1160"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #3114",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=3114"
+        ]
+      ],
+      [
+        "KAS",
+        "Cert. #130",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KAS&number=130"
+        ]
+      ],
+      [
+        "KAS",
+        "SP 800-56Arev2, vendor affirmed"
+      ],
+      [
+        "KBKDF",
+        "Cert. #145",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KDF&number=145"
+        ]
+      ],
+      [
+        "KTS",
+        "AES Cert. #4702; key establishment methodology provides between 128 and 256 bits of encryption strength"
+      ],
+      [
+        "KTS",
+        "SP800-56B, vendor affirmed"
+      ],
+      [
+        "KTS",
+        "Triple-DES Cert. #2494; key establishment methodology provides 112 bits of encryption strength"
+      ],
+      [
+        "PBKDF",
+        "vendor affirmed"
+      ],
+      [
+        "RSA",
+        "Cert. #2562",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2562"
+        ]
+      ],
+      [
+        "SHA-3",
+        "Cert. #24",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHA-3&number=24"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #3849",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3849"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #2494",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2494"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+    "Software Versions": "3.0.1"
+  },
+  "Vendor": {
+    "Name": "REDCOM Laboratories, Inc.",
+    "Website": "http://www.redcom.com/",
+    "Address": "1 Redcom Center\nVictor, NY 14564\nUSA",
+    "Contacts": [
+      {
+        "Name": "Sal Ceravolo",
+        "Email": "Sal.Ceravolo@redcom.com",
+        "Phone": "585-905-0451"
+      },
+      {
+        "Name": "Chris Hasenauer",
+        "Email": "Chris.hasenauer@redcom.com",
+        "Phone": "585-905-0451"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3189.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May2018consolidated.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "5/31/2018",
+      "Type": "Initial",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    }
+  ]
+}

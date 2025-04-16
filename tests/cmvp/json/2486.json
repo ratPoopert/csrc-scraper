@@ -1,1 +1,157 @@
-{"certificate_number": "2486"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "2486",
+  "Details": {
+    "Module Name": "Luna® Backup HSM Cryptographic Module",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "186-2 transition",
+    "Overall Level": 3,
+    "Caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
+    "Security Level Exceptions": [
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The Luna® Backup HSM Hardware Security Module (HSM) provides the same level of security as the Luna® SA and Luna® PCI-E HSMs in a convenient, small, low-cost form factor. The Luna Backup HSM ensures that sensitive cryptographic material remains strongly protected in hardware even when not being used. One can easily back up and duplicate keys securely to the Luna Backup HSM for safekeeping in case of emergency, failure or disaster.",
+    "Tested Configuration(s)": [
+      "N/A"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #2664 and #2668",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2664",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2668"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #428",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=428"
+        ]
+      ],
+      [
+        "DSA",
+        "Certs. #804 and #808",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=804",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=808"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Certs. #461 and #464",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=461",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=464"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #1655 and #1659",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1655",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1659"
+        ]
+      ],
+      [
+        "KAS",
+        "Cert. #44",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KAS&number=44"
+        ]
+      ],
+      [
+        "KBKDF",
+        "Cert. #15",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KDF&number=15"
+        ]
+      ],
+      [
+        "RSA",
+        "Certs. #1369 and #1372",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1369",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1372"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #2237 and #2241",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2237",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2241"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #1598 and #1600",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1598",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1600"
+        ]
+      ],
+      [
+        "Triple-DES MAC",
+        "Triple-DES Certs. #1598 and #1600, vendor affirmed",
+        []
+      ]
+    ],
+    "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); HRNG",
+    "Hardware Versions": "LTK-03, Version Code 0102",
+    "Firmware Versions": "6.10.7, 6.10.9, and 6.11.2"
+  },
+  "Vendor": {
+    "Name": "SafeNet Assured Technologies, LLC",
+    "Website": "",
+    "Address": "Suite D, 3465 Box Hill Corporate Center Drive\nAbingdon, Maryland 21009\nUSA",
+    "Contacts": [
+      {
+        "Name": "Shawn Campbell",
+        "Email": "shawn.campbell@safenetat.com",
+        "Phone": "443-484-7075"
+      },
+      {
+        "Name": "Bill Becker",
+        "Email": "bill.becker@safenetat.com",
+        "Phone": "443-484-7075"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2486.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "12/15/2015",
+      "Type": "Initial",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "11/20/2017",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "3/27/2018",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    },
+    {
+      "Date": "5/24/2018",
+      "Type": "Update",
+      "Lab": "EWA CANADA"
+    }
+  ]
+}

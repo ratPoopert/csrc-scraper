@@ -1,1 +1,156 @@
-{"certificate_number": "4511"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "4511",
+  "Details": {
+    "Module Name": "Code Integrity",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "9/21/2026",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #4339 operating in FIPS mode, Windows Resume validated to FIPS 140-2 under Cert. #4348 operating in FIPS mode, or TCB Launcher validated to FIPS 140-2 under Cert. #4457 operating in FIPS mode",
+    "Security Level Exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 2"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "Code Integrity (ci.dll) verifies the integrity of executable files, including kernel mode drivers, critical system components, and user mode cryptographic modules as they are loaded into memory from the disk.",
+    "Tested Configuration(s)": [
+      "Windows 10 Education May 2019 Update (x64) running on a Microsoft Surface Laptop 2 with an Intel Core i5-8350U with PAA [1]",
+      "Windows 10 Education May 2020 Update (x64) running on a Microsoft Surface Go with an Intel Pentium Gold 4415Y with PAA [3]",
+      "Windows 10 Education November 2019 Update (x64) running on a Microsoft Surface Go with an Intel Pentium Gold 4415Y with PAA [2]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Dell Latitude 5290 with an Intel Core i7-8650U with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7-8650U with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Microsoft Surface Laptop 2 with an Intel Core i5-8350U with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Microsoft Surface Pro 6 with an Intel Core i5-8250U with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Microsoft Surface Studio 2 with an Intel Core i7-7820HQ with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on a Samsung Galaxy Book 12\" with an Intel Core i5-7200 with PAA [1]",
+      "Windows 10 Enterprise May 2019 Update (x64) running on an HP EliteBook x360 830 G5 with an Intel Core i5-8350U with PAA [1]",
+      "Windows 10 Enterprise May 2020 Update (ARM64) running on a Microsoft Surface Pro X with a Microsoft SQ1 with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Dell Latitude 5300 2-in-1 with an Intel Core i7-8665U with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7-8650U with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Microsoft Surface Go 2 LTE with an Intel Pentium Gold 4425y with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Microsoft Surface Pro 6 with an Intel Core i7-8650U with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Microsoft Surface Pro 7 with an Intel Core i3-1005G1 with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on a Panasonic Toughbook CF 55 with an Intel Core i5-8365U with PAA [3]",
+      "Windows 10 Enterprise May 2020 Update (x64) running on an HP EliteBook x360 830 G6 with an Intel Core i7-8565U with PAA [3]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Dell Latitude 5300 2-in-1 with an Intel Core i7-8665U with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7-8650U with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Microsoft Surface Go LTE with an Intel Pentium Gold 4415Y with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Microsoft Surface Laptop 3 with an Intel Core i5-1035G7 with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Microsoft Surface Pro 6 with an Intel Core i5-8250U with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Panasonic Toughbook CF-33 with an Intel Core i5-7300U with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on a Samsung Galaxy Book 12\" with an Intel Core i5-7200 with PAA [2]",
+      "Windows 10 Enterprise November 2019 Update (x64) running on an HP EliteBook x360 830 G6 with an Intel Core i7-8565U with PAA [2]",
+      "Windows 10 Home May 2019 Update (x86) running on a Dell Inspiron 660s with an Intel Core i3-2120 without PAA [1]",
+      "Windows 10 Home May 2020 Update (x64) running on an HP Slimline Desktop with an Intel Pentium J4205 with PAA [3]",
+      "Windows 10 Home November 2019 Update (x64) running on an HP Slimline Desktop with an Intel Pentium J4205 with PAA [2]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Dell Latitude 12 Rugged Tablet with an Intel Core i5-8350U with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7-8650U with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Microsoft Surface Go with an Intel Pentium Gold 4415Y with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Microsoft Surface Laptop 2 with an Intel Core i5-8350U with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Microsoft Surface Pro 6 with an Intel Core i5-8250U with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Panasonic Toughbook CF-33 with an Intel Core i5-7300U with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on a Samsung Galaxy Book 10.6\" with an Intel Core m3-7Y30 with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on an HP Slimline Desktop with an Intel Pentium J4205 with PAA [1]",
+      "Windows 10 Pro May 2019 Update (x64) running on an HP ZBook 15 G5 with an Intel Core i5-8400H with PAA [1]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Dell Latitude 7200 2-in-1 with an Intel Core i7-8665U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Dynabook TECRA-X50-F with an Intel Core i7-8565U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Go 2 with an Intel Core m3-8100Y with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Go LTE with an Intel Core i7-8665U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Laptop 2 with an Intel Core i5-8350U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Laptop 3 with an Intel Core i5-1035G7 with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Pro LTE with an Intel Core i5-7300U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on a Microsoft Surface Studio 2 with an Intel Core i7-7820HQ with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on an HP ProBook 650 G5 with an Intel Core i7-8665U with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x64) running on an HP ZBook 15 G6 with an Intel Core i7-9850H with PAA [3]",
+      "Windows 10 Pro May 2020 Update (x86) running on a Dell Inspiron 660s with an Intel Core i3-2120 without PAA [3]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Dell Latitude 7200 2-in-1 with an Intel Core i7-8665U with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Microsoft Surface Laptop 2 with an Intel Core i5-8350U with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Microsoft Surface Pro 7 with an Intel Core m3-7Y30 with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Microsoft Surface Pro LTE with an Intel Core i5-7300U with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Microsoft Surface Studio 2 with an Intel Core i7-7820HQ with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on a Samsung Galaxy Book 10.6\" with an Intel Core m3-7Y30 with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x64) running on an HP ProBook 650 G5 with an Intel Core i7-8665U with PAA [2]",
+      "Windows 10 Pro November 2019 Update (x86) running on a Dell Inspiron 660s with an Intel Core i3-2120 without PAA [2]",
+      "Windows Server Core (x64) on Hyper-V on Microsoft Windows Server 2016 running on a Dell PowerEdge R7425 with an AMD EPYC 7251 with PAA [1]",
+      "Windows Server Core (x64) on Hyper-V on Microsoft Windows Server 2019 running on a Dell PowerEdge R740 with an Intel Xeon Gold 6126 with PAA [1]",
+      "Windows Server Core (x64) running on a Dell PowerEdge R7425 with an AMD EPYC 7251 with PAA [1]",
+      "Windows Server Core Datacenter May 2020 Update (x64) on Hyper-V on Microsoft Windows Server 2019 running on a Dell Precision 5810 with an Intel Xeon E5-1620 v3 with PAA [3]",
+      "Windows Server Core Datacenter May 2020 Update (x64) running on a Dell PowerEdge R640 with an Intel Xeon Gold 6230 with PAA [3]",
+      "Windows Server Core Datacenter May 2020 Update (x64) running on a Dell PowerEdge R740 with an Intel Xeon Platinum 8268 with PAA [3]",
+      "Windows Server Core May 2020 Update (x64) on Hyper-V Microsoft Windows Server 2016 running on a Dell PowerEdge R740 with an Intel Xeon Platinum 8268 with PAA [3]",
+      "Windows Server Core May 2020 Update (x64) on Hyper-V on Microsoft Windows Server 2019 running on a Dell Precision 5810 with an Intel Xeon E5-1620 v3 with PAA [3]",
+      "Windows Server Core May 2020 Update (x64) running on a Dell PowerEdge R7515 with an AMD EPYC 7702P with PAA [3]",
+      "Windows Server Datacenter Core (x64) on Hyper-V on Microsoft Windows Server 2019 running on a Dell PowerEdge R740 with an Intel Xeon Gold 6126 with PAA [1]",
+      "Windows Server Datacenter Core (x64) running on a Dell PowerEdge R740 with an Intel Xeon Gold 6126 with PAA [1]",
+      "Windows Server Datacenter November 2019 Update (x64) on Hyper-V on Microsoft Windows Server 2019 on Dell PowerEdge R740 with an Intel Xeon Platinum 8268 with PAA [2]",
+      "Windows Server Datacenter November 2019 Update (x64) running on a Dell PowerEdge R740 with an Intel Xeon Platinum 8268 with PAA [2]",
+      "Windows Server November 2019 Update (x64) on Hyper-V on Microsoft Windows Server 2016 on Dell PowerEdge R7425 with an AMD EPYC 7251 with PAA [2]",
+      "Windows Server November 2019 Update (x64) running on a Dell PowerEdge R7425 with an AMD EPYC 7251 with PAA [2] (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #C785, #C1363 and #C1897",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=785",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1363",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1897"
+        ]
+      ],
+      [
+        "RSA",
+        "Certs. #C785, #C795, #C1363, #C1367, #C1897 and #C1947",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=785",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=795",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1363",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1367",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1897",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1947"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #C785, #C1363 and #C1897",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=785",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1363",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=C&number=1897"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "N/A",
+    "Software Versions": "10.0.18362[1], 10.0.18363[2] and 10.0.19041[3]"
+  },
+  "Vendor": {
+    "Name": "Microsoft Corporation",
+    "Website": "http://www.microsoft.com/",
+    "Address": "One Microsoft Way\nRedmond, WA 98052-6399\nUSA",
+    "Contacts": [
+      {
+        "Name": "Mike Grimm",
+        "Email": "FIPS@microsoft.com",
+        "Phone": "800-Microsoft"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4511.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202023_010623_0642.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "5/5/2023",
+      "Type": "Initial",
+      "Lab": "LEIDOS CSTL"
+    }
+  ]
+}

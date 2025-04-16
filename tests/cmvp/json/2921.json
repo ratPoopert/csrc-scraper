@@ -1,1 +1,154 @@
-{"certificate_number": "2921"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "2921",
+  "Details": {
+    "Module Name": "Juniper Networks SRX1400, SRX3400, and SRX3600 Services Gateways",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "Moved to historical list due to sunsetting",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode and with the tamper-evident seals installed as indicated in the Security Policy",
+    "Security Level Exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "Juniper Networks SRX Series Services Gateways provide the essential capabilities necessary to connect, secure, and manage enterprise and service provider networks, from the smallest sites to the largest headquarters and data centers.",
+    "Tested Configuration(s)": [
+      "N/A"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #4054, #4056 and #4329",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4054",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4056",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4329"
+        ]
+      ],
+      [
+        "CVL",
+        "Certs. #880 and #926",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=880",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=926"
+        ]
+      ],
+      [
+        "DRBG",
+        "Certs. #1216 and #1399",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1216",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1399"
+        ]
+      ],
+      [
+        "DSA",
+        "Certs. #1096 and #1104",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=1096",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=1104"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Certs. #909 and #917",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=909",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=917"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #2646, #2648 and #2867",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2646",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2648",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=2867"
+        ]
+      ],
+      [
+        "KTS",
+        "AES Cert. #4054 and HMAC Cert. #2646"
+      ],
+      [
+        "KTS",
+        "AES Cert. #4056 and HMAC Cert. #2648"
+      ],
+      [
+        "KTS",
+        "Triple-DES Cert. #2223 and HMAC Cert. #2648"
+      ],
+      [
+        "KTS",
+        "Triple-DES Cert. #2224 and HMAC Cert. #2646"
+      ],
+      [
+        "RSA",
+        "Certs. #2087 and #2202",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2087",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2202"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #3341, #3343 and #3571",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3341",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3343",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3571"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #2222, #2223 and #2224",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2222",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2223",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2224"
+        ]
+      ]
+    ],
+    "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 192 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; ARCFOUR; Blowfish; CAST; HMAC-MD5; HMAC-RIPEMD160; UMAC",
+    "Hardware Versions": "P/Ns SRX1400BASE-GE-AC with [1] or [2], SRX1400BASE-GE-DC with [1] or [2], SRX3400BASE-AC with [2], SRX3400BASE-DC with [2], SRX3400BASE-DC2 with [2], SRX3600BASE-AC with [2], SRX3600BASE-DC with [2], and SRX3600BASE-DC2 with [2]; Service Processing Cards SRX1K-NPC-SPC-1-10-40 [1] or SRX3K-SPC-1-10-40 [2]; with Tamper Seals JNPR-FIPS-TAMPER-LBLS",
+    "Firmware Versions": "JUNOS-FIPS 12.3X48-D30"
+  },
+  "Vendor": {
+    "Name": "Juniper Networks, Inc.",
+    "Website": "http://www.juniper.net/",
+    "Address": "1133 Innovation Way\nSunnyvale, CA 94089\nUSA",
+    "Contacts": [
+      {
+        "Name": "Jaz Lin",
+        "Email": "jazlin@juniper.net",
+        "Phone": "408-745-2000"
+      },
+      {
+        "Name": "{Vann (Vanna) Nguyen",
+        "Email": "vann@juniper.net",
+        "Phone": "408-745-2000"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2921.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2017.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "6/14/2017",
+      "Type": "Initial",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    }
+  ]
+}

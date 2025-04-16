@@ -1,1 +1,121 @@
-{"certificate_number": "4123"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "4123",
+  "Details": {
+    "Module Name": "FUJIFILM SONOSITE Cryptographic Module",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "Moved to historical list due to sunsetting",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+    "Security Level Exceptions": [
+      "Roles, Services, and Authentication: Level 2",
+      "Physical Security: N/A",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "FUJIFILM SONOSITE Cryptographic Module is a software library providing a C language application program interface (API) for use by processes that require cryptographic services.",
+    "Tested Configuration(s)": [
+      "Android 9 running on Lantronix Open-Q 820 Development Kit with Qualcomm Snapdragon 821E with PAA",
+      "Android 9 running on Lantronix Open-Q 820 Development Kit with Qualcomm Snapdragon 821E without PAA (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "DRBG",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "KAS-SSC",
+        "vendor affirmed"
+      ],
+      [
+        "RSA",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #A2040",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2040"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+    "Software Versions": "1.0"
+  },
+  "Vendor": {
+    "Name": "FUJIFILM SONOSITE, Inc.",
+    "Website": "https://www.sonosite.com/",
+    "Address": "21919 30th Drive SE\nBothell, WA 98021\nUSA",
+    "Contacts": [
+      {
+        "Name": "Raymond Woods",
+        "Email": "raymond.woods@fujifilm.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4123.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202022_010222_0702_signed.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "1/5/2022",
+      "Type": "Initial",
+      "Lab": "ACUMEN SECURITY, LLC"
+    }
+  ]
+}

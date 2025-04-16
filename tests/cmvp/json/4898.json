@@ -1,1 +1,441 @@
-{"certificate_number": "4898"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "4898",
+  "Details": {
+    "Module Name": "SafeZone FIPS SW Cryptographic Module",
+    "Standard": "FIPS 140-3",
+    "Status": "Active",
+    "Sunset Date": "11/21/2026",
+    "Overall Level": 1,
+    "Caveat": "Interim Validation. When operated in approved mode",
+    "Security Level Exceptions": [
+      "Physical security: N/A",
+      "Non-invasive security: N/A",
+      "Mitigation of other attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "SafeZone FIPS SW Cryptographic Module is a FIPS 140-3 Level 1 validated software cryptographic module from Rambus. The module provides a set of commonly used cryptographic primitives by exposing a custom API for a wide range of applications, typically running on a general-purpose operating system.",
+    "Tested Configuration(s)": [
+      "Linux Ubuntu 20.04 LTS (32-bit) running on a Raspberry Pi 2 with a Broadcom BCM2836 with PAA",
+      "Linux Ubuntu 20.04 LTS (32-bit) running on an AAEON UP Core UPC-CHT01-A20-0464-A11 with an Intel® Atom™ x5-Z8350 with PAA",
+      "Linux Ubuntu 20.04 LTS (32-bit) running on an AAEON UP Core UPC-CHT01-A20-0464-A11 with an Intel® Atom™ x5-Z8350 without PAA",
+      "Linux Ubuntu 20.04 LTS (64-bit) running on a Raspberry Pi 4 with a Broadcom BCM2711 with PAA",
+      "Linux Ubuntu 20.04 LTS (64-bit) running on a Raspberry Pi 4 with a Broadcom BCM2711 without PAA",
+      "Linux Ubuntu 20.04 LTS (64-bit) running on an AAEON UP Core UPC-CHT01-A20-0464-A11 with an Intel® Atom™ x5-Z8350 with PAA",
+      "Linux Ubuntu 20.04 LTS (64-bit) running on an AAEON UP Core UPC-CHT01-A20-0464-A11 with an Intel® Atom™ x5-Z8350 without PAA"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES-CBC",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-CCM",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-CMAC",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-CTR",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-ECB",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-GCM",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-GMAC",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-KW",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-KWP",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-OFB",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "AES-XTS Testing Revision 2.0",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "Counter DRBG",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "DSA KeyGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "DSA PQGGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "DSA PQGVer (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "DSA SigGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "DSA SigVer (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "ECDSA KeyGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "ECDSA SigGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "ECDSA SigVer (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "HMAC-SHA-1",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "HMAC-SHA2-224",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "HMAC-SHA2-256",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "HMAC-SHA2-384",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "HMAC-SHA2-512",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KAS-ECC CDH-Component",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KAS-ECC-SSC Sp800-56Ar3",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KAS-FFC-SSC Sp800-56Ar3",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDA HKDF SP800-56Cr2",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDA TwoStep SP800-56Cr2",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDF IKEv1",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDF IKEv2",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDF SP800-108",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KDF SRTP",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "KTS-IFC",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "PBKDF",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "RSA KeyGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "RSA SigGen (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "RSA SigVer (FIPS186-4)",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA-1",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA2-224",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA2-256",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA2-384",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA2-512",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA3-224",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA3-256",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA3-256",
+        "A2890",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35501"
+        ]
+      ],
+      [
+        "SHA3-384",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHA3-512",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHAKE-128",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "SHAKE-256",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "TDES-CBC",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "TDES-ECB",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ],
+      [
+        "TLS v1.2 KDF RFC7627",
+        "A2836",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?validation=35447"
+        ]
+      ]
+    ],
+    "Entropy": "ENT (NP)",
+    "Software Versions": "v2.0"
+  },
+  "Vendor": {
+    "Name": "Rambus Inc.",
+    "Website": "http://www.rambus.com/",
+    "Address": "4453 North First Street\nSuite 100\nSan Jose, California 95134\nUnited States",
+    "Contacts": [
+      {
+        "Name": "Stuart Kincaid",
+        "Email": "skincaid@rambus.com",
+        "Phone": "408-462-8000"
+      },
+      {
+        "Name": "Ville Paavilainen",
+        "Email": "vpaavilainen@rambus.com",
+        "Phone": "35-850-482-9439"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4898.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "11/22/2024",
+      "Type": "Initial",
+      "Lab": "LEIDOS CSTL"
+    }
+  ]
+}

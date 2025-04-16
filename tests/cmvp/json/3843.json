@@ -1,1 +1,113 @@
-{"certificate_number": "3843"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3843",
+  "Details": {
+    "Module Name": "Cisco Adaptive Security Appliance (ASA) Virtual",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "SP 800-56Arev3 transition",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode",
+    "Security Level Exceptions": [
+      "Roles, Services, and Authentication: Level 3",
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The market-leading Cisco ASA Security Appliance Series deliver robust user and application policy enforcement, multi-vector attack protection, and secure connectivity services in cost-effective, easy-to-deploy solutions. The ASA Virtual Adaptive Security Appliances provide comprehensive security, performance, and reliability for network environments of all sizes.",
+    "Tested Configuration(s)": [
+      "FXOS version 2 on NFVIS 3 running on ENCS 5412 with Intel Xeon D-1528 (single-user mode)",
+      "FXOS version 2 on VMware ESXi 6.0 running on Cisco UCS C220 M5 with Intel Xeon Silver 4110",
+      "FXOS version 2 on VMware ESXi 6.5 running on Cisco UCS C220 M5 with Intel Xeon Silver 4110"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #5008",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=5008"
+        ]
+      ],
+      [
+        "CVL",
+        "Cert. #1561",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1561"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #1828",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1828"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #1277",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=1277"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #3329",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=3329"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #2703",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2703"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #4074",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=4074"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #2584",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2584"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "Diffie-Hellman (CVL Cert. #1561, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+    "Software Versions": "9.12"
+  },
+  "Vendor": {
+    "Name": "Cisco Systems, Inc.",
+    "Website": "http://www.cisco.com/",
+    "Address": "170 West Tasman Drive\nSan Jose, CA 95134\nUSA",
+    "Contacts": [
+      {
+        "Name": "Global Certification Team",
+        "Email": "certteam@cisco.com"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3843.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "3/10/2021",
+      "Type": "Initial",
+      "Lab": "GOSSAMER SECURITY SOLUTIONS INC"
+    }
+  ]
+}

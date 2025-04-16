@@ -1,1 +1,82 @@
-{"certificate_number": "160"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "160",
+  "Details": {
+    "Module Name": "CSA8000 Cryptographic Adapter",
+    "Standard": "FIPS 140-1",
+    "Status": "Historical",
+    "Historical Reason": "Validation Sunsetting Policy - FIPS 140-1 Certificate",
+    "Overall Level": 3,
+    "Caveat": "When operated in FIPS mode",
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip embedded",
+    "Description": "The Eracom CSA8000 Cryptographic Adapter is an intelligent PCI adapter card that provides a wide range of cryptographic functions with dedicated DES/3DES and RSA hardware accelerators. The module implements the PKCS#11 cryptographic API and provides a comprehensive compliance to the PKCS#11 standard as well as vendor specific extensions.",
+    "Approved Algorithms": [
+      [
+        "DSA",
+        "Cert. #47",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=47"
+        ]
+      ],
+      [
+        "RSA",
+        "PKCS #1 for Signatures; vendor affirmed",
+        []
+      ],
+      [
+        "SHA-1",
+        "Cert. #55",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=55"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #63",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=63"
+        ]
+      ]
+    ],
+    "Other Algorithms": "DES (Cert. #124); HMAC-SHA-1; RSA; CAST128; IDEA; AES (Rijndael); RC2; RC4; MD2; MD5; Diffie-Hellman (key agreement)",
+    "Hardware Versions": "Revision G, Cprov",
+    "Firmware Versions": "1.10",
+    "Product URL": "http://www.eracom-tech.com/protectserver_orange.0.html"
+  },
+  "Vendor": {
+    "Name": "Eracom Technologies Group, Eracom Technologies Australia, Pty. Ltd.",
+    "Website": "http://www.eracom-tech.com/",
+    "Address": "28 Greg Chappell Drive\nBurleigh Heads, QLD 4220\nAustralia",
+    "Contacts": [
+      {
+        "Name": "Gerry Scott",
+        "Email": "sales@eracom-tech.com",
+        "Phone": "916-677-2450",
+        "Fax": "916-677-2460"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp160.pdf"
+    ],
+    [
+      "Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt160.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "7/27/2001",
+      "Type": "Initial",
+      "Lab": "CYGNACOM SOLUTIONS INC"
+    },
+    {
+      "Date": "10/18/2005",
+      "Type": "Update",
+      "Lab": ""
+    }
+  ]
+}

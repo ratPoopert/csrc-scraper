@@ -1,1 +1,124 @@
-{"certificate_number": "4351"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "4351",
+  "Details": {
+    "Module Name": "Aruba VIA Cryptographic Module",
+    "Standard": "FIPS 140-2",
+    "Status": "Active",
+    "Sunset Date": "9/21/2026",
+    "Overall Level": 1,
+    "Caveat": "When installed, initialized and configured as specified in Section 10 of the Security Policy. No assurance of the minimum strength of generated keys",
+    "Security Level Exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The Aruba VIA Cryptographic Module Version 1.0 is a software library that provides cryptographic services required by Aruba Virtual Intranet Access",
+    "Tested Configuration(s)": [
+      "Android 11 running on a Samsung Galaxy S20 with a Samsung Exynos 990 Mongoose M5",
+      "iOS 14 running on an iPhone 11 with an Apple A13 Bionic (single-user mode)",
+      "Windows 10 64-bit running on a HP ZBook G7 with an Intel Core i5-11500H"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "CVL",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "KAS-SSC",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "RSA",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #A2147",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=A&number=2147"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+    "Software Versions": "1.0"
+  },
+  "Vendor": {
+    "Name": "Aruba, a Hewlett Packard Enterprise Company",
+    "Website": "http://www.arubanetworks.com/",
+    "Address": "3333 Scott Blvd\nSanta Clara, CA 95054\nUSA",
+    "Contacts": [
+      {
+        "Name": "Kevin Micciche",
+        "Email": "kevin.micciche@hpe.com",
+        "Phone": "404-648-0062"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4351.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202022_051222_0640_signed.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "11/1/2022",
+      "Type": "Initial",
+      "Lab": "LEIDOS CSTL"
+    }
+  ]
+}

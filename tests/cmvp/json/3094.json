@@ -1,1 +1,172 @@
-{"certificate_number": "3094"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "3094",
+  "Details": {
+    "Module Name": "Kernel Mode Cryptographic Primitives Library",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "SP 800-56Arev3 transition",
+    "Overall Level": 1,
+    "Caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #3090 operating in FIPS mode or Windows Resume validated to FIPS 140-2 under Cert. #3091 operating in FIPS mode",
+    "Security Level Exceptions": [
+      "Physical Security: N/A",
+      "Design Assurance: Level 2"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "Kernel Mode Cryptographic Primitives Library (cng.sys) runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request IRP (I/O request packet).",
+    "Tested Configuration(s)": [
+      "Surface Hub (x64) running on a Microsoft Surface Hub with PAA",
+      "Windows 10 Education Creators Update (x64) running on a Microsoft Surface Pro with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface 3 with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Book with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Laptop with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Pro 4 with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Pro with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Studio with PAA",
+      "Windows 10 Enterprise Creators Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE with PAA",
+      "Windows 10 Home Creators Update (x86) running on a Dell Inspiron 660s without PAA",
+      "Windows 10 Mobile Creators Update (ARMv7) running on a Microsoft Lumia 650",
+      "Windows 10 Mobile Creators Update (ARMv7) running on a Microsoft Lumia 950",
+      "Windows 10 Mobile Creators Update (ARMv7) running on a Microsoft Lumia 950 XL",
+      "Windows 10 Mobile Creators Update (ARMv7) running on an HP Elite x3",
+      "Windows 10 Pro Creators Update (x64) on Hyper-V on Windows Server 2016 running on a Surface Pro 4 with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Dell Latitude 5285 with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Dell PowerEdge R630 Server with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Dell Precision Tower 5810MT with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface 3 with LTE with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Laptop with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Pro 3 with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Pro with PAA",
+      "Windows 10 Pro Creators Update (x64) running on a Panasonic Toughbook with PAA (single-user mode)",
+      "Windows 10 Pro Creators Update (x64) running on an HP Compaq Pro 6305 with PAA",
+      "Windows 10 Pro Creators Update (x64) running on an HP Slimline Desktop with PAA",
+      "Windows 10 S Creators Update (x64) running on a Microsoft Surface Laptop with PAA"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #4624 and #4626",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4624",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=4626"
+        ]
+      ],
+      [
+        "CKG",
+        "vendor affirmed"
+      ],
+      [
+        "CVL",
+        "Certs. #1278 and #1281",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1278",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=1281"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #1555",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=1555"
+        ]
+      ],
+      [
+        "DSA",
+        "Cert. #1223",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DSA&number=1223"
+        ]
+      ],
+      [
+        "ECDSA",
+        "Cert. #1133",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=ECDSA&number=1133"
+        ]
+      ],
+      [
+        "HMAC",
+        "Cert. #3061",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=3061"
+        ]
+      ],
+      [
+        "KAS",
+        "Cert. #127",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KAS&number=127"
+        ]
+      ],
+      [
+        "KBKDF",
+        "Cert. #140",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=KDF&number=140"
+        ]
+      ],
+      [
+        "KTS",
+        "AES Cert. #4626; key establishment methodology provides between 128 and 256 bits of encryption strength"
+      ],
+      [
+        "PBKDF",
+        "vendor affirmed"
+      ],
+      [
+        "RSA",
+        "Certs. #2521 and #2523",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2521",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=2523"
+        ]
+      ],
+      [
+        "SHS",
+        "Cert. #3790",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=3790"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Cert. #2459",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=2459"
+        ]
+      ]
+    ],
+    "Allowed Algorithms": "HMAC-MD5; MD5; NDRNG",
+    "Software Versions": "10.0.15063"
+  },
+  "Vendor": {
+    "Name": "Microsoft Corporation",
+    "Website": "http://www.microsoft.com/",
+    "Address": "One Microsoft Way\nRedmond, WA 98052-6399\nUSA",
+    "Contacts": [
+      {
+        "Name": "Mike Grimm",
+        "Email": "FIPS@microsoft.com",
+        "Phone": "800-Microsoft"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3094.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "3/22/2018",
+      "Type": "Initial",
+      "Lab": "LEIDOS CSTL"
+    }
+  ]
+}

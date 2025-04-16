@@ -1,1 +1,113 @@
-{"certificate_number": "2271"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "2271",
+  "Details": {
+    "Module Name": "AQ42-M",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode",
+    "Security Level Exceptions": [
+      "Cryptographic Module Specification: Level 3",
+      "Roles, Services, and Authentication: Level 3",
+      "Design Assurance: Level 3",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Hardware",
+    "Embodiment": "Multi-chip embedded",
+    "Description": "AQ42-M is a hardware security module that provides decryption, decoding/encoding of audio/video data for the digital cinema projector system.",
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #2932, #2933 and #2934",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2932",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2933",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2934"
+        ]
+      ],
+      [
+        "CVL",
+        "Cert. #333",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=333"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #1858 and #1859",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1858",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1859"
+        ]
+      ],
+      [
+        "RNG",
+        "Certs. #1293, #1294 and #1295",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=1293",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=1294",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RNG&number=1295"
+        ]
+      ],
+      [
+        "RSA",
+        "Certs. #1537 and #1538",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1537",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1538"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #2468, #2469, #2470 and #2471",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2468",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2469",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2470",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2471"
+        ]
+      ]
+    ],
+    "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); NDRNG; HMAC-MD5",
+    "Hardware Versions": "2.0.0",
+    "Firmware Versions": "1.2.2"
+  },
+  "Vendor": {
+    "Name": "Digicine Oristar Technology Development (Beijing) Co., Ltd.",
+    "Website": "http://www.oristartech.cn/",
+    "Address": "No.1 Di Sheng West Street, BDA, Da Xing District\nBeijing 100176\nPeople's Republic of China",
+    "Contacts": [
+      {
+        "Name": "Mr. Xiao, liqun",
+        "Email": "xiaoliqun@oristartech.com",
+        "Phone": "+86-010-8712 9372",
+        "Fax": "+86-010-8712 7010"
+      },
+      {
+        "Name": "Dr. Sun, Xiaobin",
+        "Email": "sunxiaobin@oristartech.com",
+        "Phone": "+86-010-8712 9111",
+        "Fax": "+86-010-8712 7010"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2271.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0046.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "10/24/2014",
+      "Type": "Initial",
+      "Lab": "UL VERIFICATION SERVICES INC"
+    }
+  ]
+}

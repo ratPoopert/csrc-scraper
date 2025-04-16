@@ -1,1 +1,111 @@
-{"certificate_number": "2543"}
+{
+  "$schema": "./cmvp-certificate.schema.json",
+  "Certificate Number": "2543",
+  "Details": {
+    "Module Name": "FortiClient 5.0 VPN Client",
+    "Standard": "FIPS 140-2",
+    "Status": "Historical",
+    "Historical Reason": "Moved to historical list due to sunsetting",
+    "Overall Level": 2,
+    "Caveat": "When operated in FIPS mode and configured according to the Entropy Token Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy. There is no assurance of the minimum strength of generated keys",
+    "Security Level Exceptions": [
+      "Physical Security: N/A",
+      "Mitigation of Other Attacks: N/A"
+    ],
+    "Module Type": "Software",
+    "Embodiment": "Multi-Chip Stand Alone",
+    "Description": "The FortiClient VPN client provides a FIPS 140-2 validated, IPSec and SSL VPN client for Windows platforms.",
+    "Tested Configuration(s)": [
+      "Windows 7 Enterprise Edition running on a Dell Optiplex 755 with the Fortinet entropy token (part number FTR-ENT-1) (single-user mode)"
+    ],
+    "Approved Algorithms": [
+      [
+        "AES",
+        "Certs. #2912 and #2924",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2912",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=AES&number=2924"
+        ]
+      ],
+      [
+        "CVL",
+        "Cert. #329",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=Component&number=329"
+        ]
+      ],
+      [
+        "DRBG",
+        "Cert. #538",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=DRBG&number=538"
+        ]
+      ],
+      [
+        "HMAC",
+        "Certs. #1842 and #1851",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1842",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=HMAC&number=1851"
+        ]
+      ],
+      [
+        "PBKDF",
+        "vendor affirmed"
+      ],
+      [
+        "RSA",
+        "Cert. #1533",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=RSA&number=1533"
+        ]
+      ],
+      [
+        "SHS",
+        "Certs. #2451 and #2460",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2451",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=SHS&number=2460"
+        ]
+      ],
+      [
+        "Triple-DES",
+        "Certs. #1728 and #1737",
+        [
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1728",
+          "https://csrc.nist.gov/projects/Cryptographic-Algorithm-Validation-Program/details?source=TDES&number=1737"
+        ]
+      ]
+    ]
+  },
+  "Vendor": {
+    "Name": "Fortinet, Inc.",
+    "Website": "http://www.fortinet.com/",
+    "Address": "326 Moodie Drive\nOttawa, ON K2H 8G3\nCanada",
+    "Contacts": [
+      {
+        "Name": "Alan Kaye",
+        "Email": "akaye@fortinet.com",
+        "Phone": "613-225-9381",
+        "Fax": "613-225-2951"
+      }
+    ]
+  },
+  "Related Files": [
+    [
+      "Security Policy",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2543.pdf"
+    ],
+    [
+      "Consolidated Certificate",
+      "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+    ]
+  ],
+  "Validation History": [
+    {
+      "Date": "1/26/2016",
+      "Type": "Initial",
+      "Lab": "DXC Technology"
+    }
+  ]
+}
