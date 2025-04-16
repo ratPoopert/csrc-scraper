@@ -9,7 +9,7 @@ authors = [
   {name = "Patrick Ruppert", email = "patrick.j.ruppert@gmail.com"},
 ]
 readme = "README.md"
-dependencies = ["requests"]
+dependencies = ["beautifulsoup4", "requests"]
 
 [project.urls]
 Repository = "https://github.com/ratPoopert/csrc-scraper"
