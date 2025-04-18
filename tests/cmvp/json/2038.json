@@ -28,7 +28,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "DRBG",
@@ -86,7 +87,7 @@
   },
   "Vendor": {
     "Name": "SafeLogic Inc.",
-    "Website": "http://www.safelogic.com/",
+    "Website": "http://www.safelogic.com",
     "Address": "530 Lytton Ave\nSuite 200\nPalo Alto, CA 94301\nUSA",
     "Contacts": [
       {

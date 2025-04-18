@@ -31,7 +31,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "DRBG",
@@ -63,7 +64,8 @@
       ],
       [
         "KAS-SSC",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "RSA",

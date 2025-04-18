@@ -42,7 +42,8 @@
             ],
             [
                 "Triple-DES MAC",
-                "Triple-DES Cert. #232, vendor affirmed"
+                "Triple-DES Cert. #232, vendor affirmed",
+                []
             ]
         ],
         "Other Algorithms": "DES (Cert. #246); DES MAC (Cert. #246, vendor affirmed)",
@@ -51,7 +52,7 @@
     },
     "Vendor": {
         "Name": "Oberthur Card Systems",
-        "Website": "http://www.oberthurusa.com/",
+        "Website": "http://www.oberthurusa.com",
         "Address": "4250 Pleasant Valley Road\nChantilly, VA 20151\nUSA",
         "Contacts": [
             {

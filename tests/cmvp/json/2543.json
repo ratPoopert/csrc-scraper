@@ -51,7 +51,8 @@
       ],
       [
         "PBKDF",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "RSA",
@@ -80,7 +81,7 @@
   },
   "Vendor": {
     "Name": "Fortinet, Inc.",
-    "Website": "http://www.fortinet.com/",
+    "Website": "http://www.fortinet.com",
     "Address": "326 Moodie Drive\nOttawa, ON K2H 8G3\nCanada",
     "Contacts": [
       {

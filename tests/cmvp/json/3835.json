@@ -30,7 +30,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "CVL",
@@ -69,7 +70,8 @@
       ],
       [
         "KTS",
-        "AES Cert. #C462; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Cert. #C462; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "RSA",
@@ -101,7 +103,7 @@
   },
   "Vendor": {
     "Name": "Cisco Systems, Inc.",
-    "Website": "http://www.cisco.com/",
+    "Website": "http://www.cisco.com",
     "Address": "170 West Tasman Dr.\nSan Jose, CA 95134\nUSA",
     "Contacts": [
       {

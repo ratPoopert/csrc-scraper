@@ -82,7 +82,8 @@
       ],
       [
         "Triple-DES MAC",
-        "Triple-DES Cert. #1035, vendor affirmed"
+        "Triple-DES Cert. #1035, vendor affirmed",
+        []
       ]
     ],
     "Other Algorithms": "ARC4; Aria; Camellia; CAST-6; DES; MD5; SEED; HMAC-MD5; HMAC-Tiger; HMAC-RIPEMD160; RIPEMD-160; Tiger; El-Gamal; KCDSA; HAS-160; AES (Cert. #1579, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1035, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)",
@@ -91,7 +92,7 @@
   },
   "Vendor": {
     "Name": "nCipher Security Limited",
-    "Website": "http://www.ncipher.com/",
+    "Website": "http://www.ncipher.com",
     "Address": "One Station Square\nSuite 710\nCambridge, FL CB1 2GA\nUnited Kingdom",
     "Contacts": [
       {

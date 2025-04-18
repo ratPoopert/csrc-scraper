@@ -27,7 +27,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "CVL",
@@ -76,7 +77,8 @@
       ],
       [
         "KAS",
-        "SP 800-56Arev2, vendor affirmed"
+        "SP 800-56Arev2, vendor affirmed",
+        []
       ],
       [
         "KBKDF",
@@ -87,19 +89,23 @@
       ],
       [
         "KTS",
-        "AES Cert. #4702; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Cert. #4702; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "KTS",
-        "SP800-56B, vendor affirmed"
+        "SP800-56B, vendor affirmed",
+        []
       ],
       [
         "KTS",
-        "Triple-DES Cert. #2494; key establishment methodology provides 112 bits of encryption strength"
+        "Triple-DES Cert. #2494; key establishment methodology provides 112 bits of encryption strength",
+        []
       ],
       [
         "PBKDF",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "RSA",
@@ -135,7 +141,7 @@
   },
   "Vendor": {
     "Name": "REDCOM Laboratories, Inc.",
-    "Website": "http://www.redcom.com/",
+    "Website": "http://www.redcom.com",
     "Address": "1 Redcom Center\nVictor, NY 14564\nUSA",
     "Contacts": [
       {

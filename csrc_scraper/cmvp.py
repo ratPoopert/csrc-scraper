@@ -47,6 +47,10 @@ def _scrape_details_panel(soup: BeautifulSoup) -> dict:
                 data = int(content.text.strip())
             case "Approved Algorithms":
                 data = _scrape_approved_algorithms_table(content)
+            case ("Security Level Exceptions" |
+                  "Tested Configuration(s)"):
+                data = list(map(lambda s: s.replace("\n", ""),
+                                content.stripped_strings))
             case _:
                 text = content.text.strip()
                 data = re.sub(r'\s+', ' ', text)
@@ -55,9 +59,15 @@ def _scrape_details_panel(soup: BeautifulSoup) -> dict:
 
 
 def _scrape_approved_algorithms_table(soup: BeautifulSoup):
-    tbody = soup.find('tbody')
-    rows = tbody.find_all('tr')
-    return list(map(_scrape_approved_algorithm_table_row, rows))
+    try:
+        tbody = soup.find('tbody')
+        rows = tbody.find_all('tr')
+        entries = map(_scrape_approved_algorithm_table_row, rows)
+        return list(filter(lambda e: e[0], entries))
+    except AttributeError:
+        rows = soup.find_all('div', class_="row", recursive=False)
+        entries = map(_scrape_approved_algorithm_div_row, rows)
+        return list(filter(lambda e: e[0], entries))
 
 
 def _scrape_approved_algorithm_table_row(soup: BeautifulSoup):
@@ -69,10 +79,26 @@ def _scrape_approved_algorithm_table_row(soup: BeautifulSoup):
     ]
 
 
+def _scrape_approved_algorithm_div_row(soup: BeautifulSoup):
+    alg = soup.find('div', class_="col-md-3")
+    val = soup.find('div', class_="col-md-4")
+    return [
+        alg.text.strip(),
+        val.text.strip(),
+        [_resolve_absolute_url(a.get('href')) for a in val.find_all('a')]
+    ]
+
+
 def _scrape_vendor_panel(soup: BeautifulSoup) -> dict:
+    try:
+        name = soup.find('a').text.strip()
+        website = soup.find('a').get('href', '')
+    except AttributeError:
+        name = next(soup.stripped_strings)
+        website = ""
     return {
-        "Name": soup.find('a').text.strip(),
-        "Website": soup.find('a').get('href', ''),
+        "Name": name,
+        "Website": website,
         "Address": "\n".join(map(lambda el: el.text.strip(),
                                  soup.find_all('span', recursive=False))),
         "Contacts": _scrape_vendor_contacts(soup.find('div'))
@@ -124,4 +150,4 @@ def _scrape_validation_history_table_row(soup: BeautifulSoup) -> dict:
 
 def _resolve_absolute_url(relative_url: str) -> str:
     base_url = "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/"
-    return urljoin(base_url, relative_url)
+    return urljoin(base_url, relative_url.replace(" ", "%20"))

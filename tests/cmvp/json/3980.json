@@ -91,19 +91,23 @@
       ],
       [
         "KAS",
-        "KAS-SSC Certs. #A821, #A822, #A823, #A824 and #A834, CVL Certs. #A821, #A822, #A823 and #A824"
+        "KAS-SSC Certs. #A821, #A822, #A823, #A824 and #A834, CVL Certs. #A821, #A822, #A823 and #A824",
+        []
       ],
       [
         "KTS",
-        "AES Certs. #A817, #A818, #A819, #A825, #A826, #A827, #A828, #A829, #A830, #A831, #A832 and #A833; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Certs. #A817, #A818, #A819, #A825, #A826, #A827, #A828, #A829, #A830, #A831, #A832 and #A833; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "KTS",
-        "AES Certs. #A817, #A818 and #A819 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides between 128 or 256 bits of encryption strength"
+        "AES Certs. #A817, #A818 and #A819 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides between 128 or 256 bits of encryption strength",
+        []
       ],
       [
         "KTS",
-        "Triple-DES Cert. #A820 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides 112 bits of encryption strength"
+        "Triple-DES Cert. #A820 and HMAC Certs. #A821, #A822, #A823 and #A824; key establishment methodology provides 112 bits of encryption strength",
+        []
       ],
       [
         "RSA",
@@ -147,7 +151,7 @@
   },
   "Vendor": {
     "Name": "Canonical Ltd.",
-    "Website": "http://www.canonical.com/",
+    "Website": "http://www.canonical.com",
     "Address": "5th floor, Blue Fin Building\n110 Southwark Street\nLondon SE1 0SU\nUnited Kingdom",
     "Contacts": [
       {

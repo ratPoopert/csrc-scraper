@@ -54,7 +54,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "CVL",
@@ -108,11 +109,13 @@
       ],
       [
         "KTS",
-        "AES Cert. #4626; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Cert. #4626; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "PBKDF",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "RSA",
@@ -142,7 +145,7 @@
   },
   "Vendor": {
     "Name": "Microsoft Corporation",
-    "Website": "http://www.microsoft.com/",
+    "Website": "http://www.microsoft.com",
     "Address": "One Microsoft Way\nRedmond, WA 98052-6399\nUSA",
     "Contacts": [
       {

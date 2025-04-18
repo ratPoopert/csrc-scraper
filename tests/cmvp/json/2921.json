@@ -72,19 +72,23 @@
       ],
       [
         "KTS",
-        "AES Cert. #4054 and HMAC Cert. #2646"
+        "AES Cert. #4054 and HMAC Cert. #2646",
+        []
       ],
       [
         "KTS",
-        "AES Cert. #4056 and HMAC Cert. #2648"
+        "AES Cert. #4056 and HMAC Cert. #2648",
+        []
       ],
       [
         "KTS",
-        "Triple-DES Cert. #2223 and HMAC Cert. #2648"
+        "Triple-DES Cert. #2223 and HMAC Cert. #2648",
+        []
       ],
       [
         "KTS",
-        "Triple-DES Cert. #2224 and HMAC Cert. #2646"
+        "Triple-DES Cert. #2224 and HMAC Cert. #2646",
+        []
       ],
       [
         "RSA",
@@ -119,7 +123,7 @@
   },
   "Vendor": {
     "Name": "Juniper Networks, Inc.",
-    "Website": "http://www.juniper.net/",
+    "Website": "http://www.juniper.net",
     "Address": "1133 Innovation Way\nSunnyvale, CA 94089\nUSA",
     "Contacts": [
       {
@@ -128,7 +132,7 @@
         "Phone": "408-745-2000"
       },
       {
-        "Name": "{Vann (Vanna) Nguyen",
+        "Name": "Vann (Vanna) Nguyen",
         "Email": "vann@juniper.net",
         "Phone": "408-745-2000"
       }

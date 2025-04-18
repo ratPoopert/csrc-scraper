@@ -31,7 +31,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "CVL",
@@ -50,7 +51,8 @@
       ],
       [
         "ENT",
-        "NP"
+        "NP",
+        []
       ],
       [
         "HMAC",
@@ -62,7 +64,8 @@
       ],
       [
         "KAS",
-        "KAS-SSC Cert. #A1764, CVL Cert. #A1764"
+        "KAS-SSC Cert. #A1764, CVL Cert. #A1764",
+        []
       ],
       [
         "KAS-SSC",
@@ -73,15 +76,18 @@
       ],
       [
         "KTS",
-        "AES Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "KTS",
-        "AES Cert. #A1764, HMAC Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength"
+        "AES Cert. #A1764, HMAC Cert. #A1764; key establishment methodology provides between 128 and 256 bits of encryption strength",
+        []
       ],
       [
         "KTS-RSA",
-        "Cert. #A1764; key establishment methodology provides 112 bits of encryption strength"
+        "Cert. #A1764; key establishment methodology provides 112 bits of encryption strength",
+        []
       ],
       [
         "RSA",
@@ -106,7 +112,7 @@
   },
   "Vendor": {
     "Name": "Symantec, A Division of Broadcom",
-    "Website": "http://www.broadcom.com/",
+    "Website": "http://www.broadcom.com",
     "Address": "1320 Ridder Park Dr.\nSan Jose, CA 95131\nUSA",
     "Contacts": [
       {

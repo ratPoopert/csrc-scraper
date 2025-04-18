@@ -28,7 +28,8 @@
       ],
       [
         "CKG",
-        "vendor affirmed"
+        "vendor affirmed",
+        []
       ],
       [
         "CVL",
@@ -60,11 +61,13 @@
       ],
       [
         "KAS",
-        "SP800-56A rev 3, vendor affirmed"
+        "SP800-56A rev 3, vendor affirmed",
+        []
       ],
       [
         "KAS",
-        "SP 800-56B, vendor affirmed"
+        "SP 800-56B, vendor affirmed",
+        []
       ],
       [
         "KBKDF",
@@ -75,7 +78,8 @@
       ],
       [
         "KTS",
-        "AES Cert. #4746 and HMAC Cert. #3161; key establishment methodology provides 128 or 256 bits of encryption strength"
+        "AES Cert. #4746 and HMAC Cert. #3161; key establishment methodology provides 128 or 256 bits of encryption strength",
+        []
       ],
       [
         "RSA",
@@ -98,7 +102,7 @@
   },
   "Vendor": {
     "Name": "Nuvoton Technology Corporation",
-    "Website": "http://www.nuvoton.com/",
+    "Website": "http://www.nuvoton.com",
     "Address": "4, Creation Road III\nHsinchu Science Park\nTaiwan",
     "Contacts": [
       {
