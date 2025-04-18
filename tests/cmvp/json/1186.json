@@ -5,9 +5,9 @@
     "Module Name": "Syn-Tech III P25 Radio Series",
     "Standard": "FIPS 140-2",
     "Status": "Historical",
-    "Historical Reason": "Moved to historical list due to sunsetting.",
+    "Historical Reason": "Moved to historical list due to sunsetting",
     "Overall Level": 1,
-    "Caveat": "When operated in FIPS mode.",
+    "Caveat": "When operated in FIPS mode",
     "Module Type": "Hardware",
     "Embodiment": "Multi-chip standalone",
     "Description": "The Midland Syn-Tech III P25 radios provide Project 25 encrypted and clear voice, data and Short Message Service communications in accordance with the Project 25 Digital Land Mobile Radio standards suite. In addition, conventional analog radio voice communications are supported. It is a multi-chip standalone cryptographic module consisting of production grade components in accordance to FIPS 140-2 security level 1.",
@@ -47,7 +47,7 @@
   },
   "Vendor": {
     "Name": "Midland Radio Corporation",
-    "Website": "http://www.midlandradio.com/",
+    "Website": "http://www.midlandradio.com",
     "Address": "5900 Parretta Drive\nKansas City, MO 64120\nUSA",
     "Contacts": [
       {
@@ -63,7 +63,7 @@
       "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1186.pdf"
     ],
     [
-      "certificate",
+      "Certificate",
       "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1186.pdf"
     ]
   ],
