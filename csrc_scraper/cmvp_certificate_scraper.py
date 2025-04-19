@@ -3,19 +3,23 @@ from bs4 import BeautifulSoup
 from . import helpers, urls
 
 
-def scrape(html: str):
-    soup = BeautifulSoup(html, 'html.parser')
-    result = {}
-    result["Certificate Number"] = _scrape_certificate_number(soup)
+class CMVPCertificateScraper:
 
-    panels = soup.find_all('div', class_="panel panel-default")
-    for panel in panels:
-        heading = panel.find('div', class_='panel-heading')
-        body = panel.find('div', class_='panel-body')
-        key = heading.text.strip()
-        data = _scrape_panel(key, body)
-        result[key] = data
-    return result
+    def __init__(self, html: str):
+        self.html = html
+        self.soup = BeautifulSoup(html, 'html.parser')
+        self.data = {}
+
+    def scrape(self):
+        self.data["Certificate Number"] = _scrape_certificate_number(self.soup)
+
+        panels = self.soup.find_all('div', class_="panel panel-default")
+        for panel in panels:
+            heading = panel.find('div', class_='panel-heading')
+            body = panel.find('div', class_='panel-body')
+            key = heading.text.strip()
+            data = _scrape_panel(key, body)
+            self.data[key] = data
 
 
 def _scrape_certificate_number(soup: BeautifulSoup) -> str:

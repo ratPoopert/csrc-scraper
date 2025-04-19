@@ -1,8 +1,16 @@
 from .case_loader import cmvp_certificate_cases
-from csrc_scraper.cmvp_certificate_scraper import scrape
+from csrc_scraper.cmvp_certificate_scraper import CMVPCertificateScraper
+
+
+def get_result(case) -> dict:
+    html = case[0]
+    scraper = CMVPCertificateScraper(html)
+    scraper.scrape()
+    return scraper.data
+
 
 CASES = cmvp_certificate_cases()
-RESULTS = list(map(lambda case: scrape(case[0]), CASES))
+RESULTS = list(map(get_result, CASES))
 
 
 def test_scrapes_certificate_number():
