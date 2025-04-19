@@ -1,6 +1,6 @@
-import re
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
+from . import helpers, urls
 
 
 def scrape(html: str):
@@ -49,11 +49,10 @@ def _scrape_details_panel(soup: BeautifulSoup) -> dict:
                 data = _scrape_approved_algorithms_table(content)
             case ("Security Level Exceptions" |
                   "Tested Configuration(s)"):
-                data = list(map(lambda s: s.replace("\n", ""),
+                data = list(map(helpers.remove_newlines,
                                 content.stripped_strings))
             case _:
-                text = content.text.strip()
-                data = re.sub(r'\s+', ' ', text)
+                data = helpers.condense_inner_whitespace(content.text)
         result[label] = data
     return result
 
@@ -149,5 +148,4 @@ def _scrape_validation_history_table_row(soup: BeautifulSoup) -> dict:
 
 
 def _resolve_absolute_url(relative_url: str) -> str:
-    base_url = "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/"
-    return urljoin(base_url, relative_url.replace(" ", "%20"))
+    return urls.join(urls.CMVP_CERTIFICATE_BASE_URL, relative_url)
