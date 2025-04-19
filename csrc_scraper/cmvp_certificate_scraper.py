@@ -1,13 +1,12 @@
-from bs4 import BeautifulSoup
+from .scraper import Scraper, BeautifulSoup
 
 from . import helpers, urls
 
 
-class CMVPCertificateScraper:
+class CMVPCertificateScraper(Scraper):
 
     def __init__(self, html: str):
-        self.html = html
-        self.soup = BeautifulSoup(html, 'html.parser')
+        super().__init__(html)
         self.data = {}
 
     def scrape(self):
