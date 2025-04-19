@@ -1,7 +1,7 @@
-from .case_loader import load_cases
+from .case_loader import cmvp_certificate_cases
 from csrc_scraper import cmvp
 
-CASES = load_cases()
+CASES = cmvp_certificate_cases()
 RESULTS = list(map(lambda case: cmvp.scrape(case[0]), CASES))
 
 
@@ -48,5 +48,6 @@ def test_scrapes_validation_history_panel():
         data = CASES[i][1]
         expected = data.get("Validation History")
         actual = RESULTS[i].get("Validation History")
-        msg = f"Certificate {data['Certificate Number']}, Validation History, {i}"
+        msg = f"Certificate {
+            data['Certificate Number']}, Validation History, {i}"
         assert expected == actual, msg
