@@ -1,10 +1,12 @@
 from .case_loader import cmvp_certificate_cases
-from csrc_scraper.cmvp_certificate_scraper import CMVPCertificateScraper
+from csrc_scraper.scraper import get_scraper
+from csrc_scraper import urls
 
 
 def get_result(case) -> dict:
     html = case[0]
-    scraper = CMVPCertificateScraper(html)
+    url = urls.CMVP_CERTIFICATE_BASE_URL
+    scraper = get_scraper(url, html)
     scraper.scrape()
     return scraper.data
 

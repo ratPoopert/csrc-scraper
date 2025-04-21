@@ -5,44 +5,70 @@ from . import helpers, urls
 
 class CMVPCertificateScraper(Scraper):
 
-    def __init__(self, html: str):
-        super().__init__(html)
+    def scrape(self):
         self.data = {}
+        self.scrape_certificate_number()
+        self.scrape_panels()
+
+    def scrape_certificate_number(self):
+        heading_text = self.soup.find('h3').text
+        certificate_number = heading_text.lstrip("Certificate #").strip()
+        self.data["Certificate Number"] = certificate_number
+
+    def scrape_panels(self):
+        panels = map(
+            Panel,
+            self.soup.find_all('div', class_="panel panel-default")
+        )
+        for panel in panels:
+            panel.scrape()
+            self.data[panel.heading] = panel.data
+
+
+class Panel:
+
+    def __init__(self, soup: BeautifulSoup):
+        self.heading = soup.find('div', class_='panel-heading').text.strip()
+        self.body = soup.find('div', class_='panel-body')
+        self.data = self.data_type()
+
+    @property
+    def heading(self):
+        pass
+
+    @property
+    def data_type(self):
+        pass
 
     def scrape(self):
-        self.data["Certificate Number"] = _scrape_certificate_number(self.soup)
+        pass
 
-        panels = self.soup.find_all('div', class_="panel panel-default")
-        for panel in panels:
-            heading = panel.find('div', class_='panel-heading')
-            body = panel.find('div', class_='panel-body')
-            key = heading.text.strip()
-            data = _scrape_panel(key, body)
-            self.data[key] = data
-
-
-def _scrape_certificate_number(soup: BeautifulSoup) -> str:
-    return soup.find('h3').text.lstrip("Certificate #").strip()
-
-
-def _scrape_panel(key: str, soup: BeautifulSoup):
-    match key:
-        case "Details":
-            return _scrape_details_panel(soup)
-        case "Vendor":
-            return _scrape_vendor_panel(soup)
-        case "Related Files":
-            return _scrape_related_files_panel(soup)
-        case "Validation History":
-            return _scrape_validation_history_panel(soup)
-        case _:
-            return None
+    def __new__(cls, soup: BeautifulSoup):
+        if cls is Panel:
+            heading = soup.find('div', class_='panel-heading').text.strip()
+            panels = [
+                DetailsPanel,
+                VendorPanel,
+                RelatedFilesPanel,
+                ValidationHistoryPanel
+            ]
+            for panel in panels:
+                if heading == panel.heading:
+                    return super().__new__(panel)
+            raise NotImplementedError(f"Unrecognized panel: {heading}")
+        super().__new__(cls, soup)
 
 
-def _scrape_details_panel(soup: BeautifulSoup) -> dict:
-    result = {}
-    rows = soup.find_all('div', class_="row", recursive=False)
-    for row in rows:
+class DetailsPanel(Panel):
+    heading = "Details"
+    data_type = dict
+
+    def scrape(self):
+        rows = self.body.find_all('div', class_="row", recursive=False)
+        for row in rows:
+            self.scrape_row(row)
+
+    def scrape_row(self, row: BeautifulSoup) -> tuple:
         label = row.find('div', class_="col-md-3").text.strip()
         content = row.find('div', class_='col-md-9')
         match label:
@@ -56,8 +82,80 @@ def _scrape_details_panel(soup: BeautifulSoup) -> dict:
                                 content.stripped_strings))
             case _:
                 data = helpers.condense_inner_whitespace(content.text)
-        result[label] = data
-    return result
+        self.data[label] = data
+
+    def scrape_approved_algorithms(self, content: BeautifulSoup):
+        try:
+            tbody = content.find('tbody')
+            rows = tbody.find_all('tr')
+            entries = map(_scrape_approved_algorithm_table_row, rows)
+            return list(filter(lambda e: e[0], entries))
+        except AttributeError:
+            rows = content.find_all('div', class_="row", recursive=False)
+            entries = map(_scrape_approved_algorithm_div_row, rows)
+            return list(filter(lambda e: e[0], entries))
+
+
+class VendorPanel(Panel):
+    heading = "Vendor"
+    data_type = dict
+
+    def scrape(self):
+        self.scrape_name()
+        self.scrape_website()
+        self.scrape_address()
+        self.scrape_contacts()
+
+    def scrape_name(self):
+        try:
+            name = self.body.find('a').text.strip()
+        except Exception:
+            name = next(self.body.stripped_strings)
+        self.data["Name"] = name
+
+    def scrape_address(self):
+        lines = self.body.find_all('span', recursive=False)
+        cleaned_lines = map(lambda line: line.text.strip(), lines)
+        self.data["Address"] = "\n".join(cleaned_lines)
+
+    def scrape_website(self):
+        try:
+            website = self.body.find('a').get('href', '')
+        except Exception:
+            website = ""
+        self.data["Website"] = website
+
+    def scrape_contacts(self):
+        self.data["Contacts"] = _scrape_vendor_contacts(self.body.find('div'))
+
+
+class RelatedFilesPanel(Panel):
+    heading = "Related Files"
+    data_type = list
+
+    def scrape(self):
+        links = self.body.find_all('a')
+        def label(link): return link.text.strip()
+        def url(link): return _resolve_absolute_url(link.get('href'))
+        self.data = [[label(link), url(link)] for link in links]
+
+
+class ValidationHistoryPanel(Panel):
+    heading = "Validation History"
+    data_type = list
+
+    def scrape(self):
+        rows = self.body.find('tbody').find_all('tr')
+        for row in rows:
+            self.scrape_row(row)
+
+    def scrape_row(self, row: BeautifulSoup):
+        cells = row.find_all('td')
+        self.data.append({
+            "Date": cells[0].text.strip(),
+            "Type": cells[1].text.strip(),
+            "Lab": cells[2].text.strip(),
+        })
 
 
 def _scrape_approved_algorithms_table(soup: BeautifulSoup):
