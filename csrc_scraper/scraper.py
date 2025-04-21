@@ -2,7 +2,10 @@ from abc import ABC, abstractmethod
 
 from bs4 import BeautifulSoup
 
-from .urls import CMVP_CERTIFICATE_BASE_URL
+from .urls import (
+    CMVP_CERTIFICATE_BASE_URL,
+    CAVP_CERTIFICATE_BASE_URL
+)
 
 
 class Scraper(ABC):
@@ -33,4 +36,7 @@ def get_scraper(url: str, html: str) -> Scraper:
     if url.startswith(CMVP_CERTIFICATE_BASE_URL):
         from .cmvp_certificate_scraper import CMVPCertificateScraper
         return CMVPCertificateScraper(html)
+    if url.startswith(CAVP_CERTIFICATE_BASE_URL):
+        from .cavp_certificate_scraper import CAVPCertificateScraper
+        return CAVPCertificateScraper(html)
     raise NotImplementedError(f"No scraper implemented for URL {url}")

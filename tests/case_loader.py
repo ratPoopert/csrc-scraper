@@ -7,6 +7,11 @@ def cmvp_certificate_cases() -> tuple[tuple]:
     return load_cases(base_dir/'examples/cmvp/certificates')
 
 
+def cavp_certificate_cases() -> tuple[tuple]:
+    base_dir = Path(__file__).parent
+    return load_cases(base_dir/'examples/cavp/certificates')
+
+
 def load_cases(base_dir: Path) -> tuple[tuple]:
     html_dir = base_dir/'html'
     json_dir = base_dir/'json'

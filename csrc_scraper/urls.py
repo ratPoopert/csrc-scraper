@@ -1,7 +1,15 @@
 import urllib.parse
 
 CSRC_BASE_URL = "https://csrc.nist.gov/"
-CMVP_BASE_URL = CSRC_BASE_URL + "projects/cryptographic-module-validation-program/"
+
+CAVP_BASE_URL = CSRC_BASE_URL + \
+    "projects/Cryptographic-Algorithm-Validation-Program/"
+
+CAVP_CERTIFICATE_BASE_URL = CAVP_BASE_URL + "details"
+
+CMVP_BASE_URL = CSRC_BASE_URL + \
+    "projects/cryptographic-module-validation-program/"
+
 CMVP_CERTIFICATE_BASE_URL = CMVP_BASE_URL + "certificate/"
 
 

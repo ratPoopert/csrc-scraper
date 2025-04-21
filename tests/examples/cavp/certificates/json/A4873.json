@@ -1,0 +1,18 @@
+{
+    "Implementation Name": "CryptoComply Server Engine",
+    "Description": "CryptoComply for Server is a standards-based 'Drop-in Compliance' cryptographic engine for servers and appliances. The module features robust algorithm support, including CNSA algorithms.",
+    "Version": "2.1.2",
+    "Type": "SOFTWARE",
+    "Vendor": {
+        "Name": "SafeLogic Inc.",
+        "Website": "https://www.safelogic.com/",
+        "Address": "530 Lytton Ave\nSuite 200\nPalo Alto, CA 94301\nUSA",
+        "Contacts": [
+            {
+                "Name": "SafeLogic Inside Sales",
+                "Email": "sales@safelogic.com",
+                "Phone": "(844) 436-2797"
+            }
+        ]
+    }
+}
