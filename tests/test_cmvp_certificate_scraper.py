@@ -49,7 +49,7 @@ def test_scrapes_related_files_panel():
         data = CASES[i][1]
         expected = data.get("Related Files")
         actual = RESULTS[i].get("Related Files")
-        msg = f"Certificate {data['Certificate Number']}, Related Files, {i}"
+        msg = f"Certificate {data['Certificate Number']}, Related Files"
         assert expected == actual, msg
 
 
@@ -58,6 +58,5 @@ def test_scrapes_validation_history_panel():
         data = CASES[i][1]
         expected = data.get("Validation History")
         actual = RESULTS[i].get("Validation History")
-        msg = f"Certificate {
-            data['Certificate Number']}, Validation History, {i}"
+        msg = f"Certificate {data['Certificate Number']}, Validation History"
         assert expected == actual, msg
